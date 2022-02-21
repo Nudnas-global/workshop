@@ -20,6 +20,7 @@
 <script>
     function initMap(){
         var location = {lat: 6.79, lng: 79.9};
+        var location2 = {lat: 6.89, lng: 79.9};
         var map = new google.maps.Map(document.getElementById("map"),{
             zoom: 4, 
             center: location
@@ -29,11 +30,16 @@
             position: location,
             map: map
         }
+        var marker2 = new google.maps.Marker({
+
+            position: location2,
+            map: map
+        }
 
         );
     }
-    AIzaSyCPiTORsnv88_HGH3nS5BvIClqAT6op8bY
-    AIzaSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8
+//     AIzaSyCPiTORsnv88_HGH3nS5BvIClqAT6op8bY
+//     AIzaSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8&&callback=initMap"></script>
 </body>
