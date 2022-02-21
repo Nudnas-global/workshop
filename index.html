@@ -1,46 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title></title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        #map {
-            height: 1000px;
-            width: 50%;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sale=1.0">
+    <title>The map</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div id = "map"></div>
-
-<script>
-    function initMap(){
-        var location = {lat: 6.79, lng: 79.9};
-        var location2 = {lat: 6.89, lng: 79.9};
-        var map = new google.maps.Map(document.getElementById("map"),{
-            zoom: 4, 
-            center: location
-        });
-        var marker = new google.maps.Marker({
-
-            position: location,
-            map: map
-        });
-        var marker = new google.maps.Marker({
-
-            position: location2,
-            map: map
-        });
+    <h1>I dont know what will happen</h1>
 
 
-    }
+    <div id="map"></div>
+    <script src="script.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7Y9VCv2WMYaET0oo_SNheamPxID72WNY&map_ids=d6d1205e9187fda7&callback=initMap"></script>
 //     AIzaSyCPiTORsnv88_HGH3nS5BvIClqAT6op8bY
 //     AIzaSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8&&callback=initMap"></script>
+
+
+<p>I always wanted to create an online map </p>
+
 </body>
 </html>
